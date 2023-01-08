@@ -1,0 +1,153 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.s2Index {
+    min-height: 8vh;
+    display: flex;
+    background-image: url(./assets/fondoHeader.jpg);
+}
+
+/* Header */
+.navAncor{
+    color: #ededed;
+    font-size: 15px;
+}
+.navLi :hover {
+    color:rgb(4, 4, 66);
+    background-color: rgba(248, 248, 246, 0.938);
+    border-radius: 15%;
+}
+
+.navAncor{
+    color: #ededed;
+}
+.colorSanguche{
+    background-color: #ededed;
+}
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 10vh;
+    width: 100%;
+    background: linear-gradient(135deg, rgba(19, 17, 18, 255) 15%, rgb(44, 35, 75));
+}
+
+.headerIndex {
+    background-image: url(./assets/fondo6.jpg);
+}
+
+.logo {
+    width: 15vw;
+}
+
+.titleHome {
+    color: #fdf8f8;
+    font-size: 35px;
+    margin: 1rem;
+}
+
+.botonInicio img {
+    width: 50px;
+    margin-left: 1rem;
+}
+
+.imgCarousel {
+    height: 65vh;
+    object-fit: cover;
+    width: 100%;
+}
+
+.subTitleIndex {
+    font-family: 'Cinzel', serif;
+    color: #ededed;
+    background-image: url(./assets/fondoHeader.jpg);
+    height: 10vh;  
+}
+.tituloCursos{
+   padding-top: 1rem;   
+}
+
+.cardIndex {
+    margin: 5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 90%;  
+}
+
+.titleSection {
+    font-family: 'Cinzel', serif;
+    color: rgba(6, 70, 126, 255);
+}
+
+.subtitleSection {
+    color: rgba(6, 70, 126, 255);
+}
+
+.card {
+
+    border: none;
+    display: flex;
+    flex-direction: column;
+    margin-left: 4rem;
+}
+
+/*Estilos Footer*/
+
+footer { 
+   background-image: url(./assets/footer.jpg);  
+    color: #ededed;    
+}
+.imagencita img{
+    width: 3rem;
+    margin: 0.3rem;
+}
+
+/*Estilos alumnos.html*/
+.inscribirse{
+    width: 100%;
+    display:flex;
+    justify-content: center; 
+}
+
+
+table td{
+    margin: 2rem;
+}
+/* Estilos profesor.html*/
+
+.seleccionar{
+ background-color: #c5d5f74b;
+border-radius: 0.3em; 
+margin: 1rem;
+}
+
+/*Estilos para Contactos*/
+
+.mapcontainer{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.googleMaps{
+    width: 35.5rem;
+    height: 35.5rem;
+    border-radius: 50%; 
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid lightblue;
+
+}
+.mapita{
+    border-radius: 50%;
+    width: 35rem;
+    height:35rem;
+}

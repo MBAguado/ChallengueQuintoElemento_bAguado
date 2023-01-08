@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Quinto Impacto | Home</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="shortcut icon" href="./assets/cropped-mini-01-192x192.png" type="image/x-icon">
+    <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+    <div id="app">
+        <section class="s2Index">
+            <!-- Imagen de pintura para el header -->
+        </section>
+        <header class="sticky-lg-top">
+            <img src="./assets/logo-5to.png" alt="Quinto Impacto">
+            <h1 class="titleHome">CAPACITATE Y CREA UN IMPACTO</h1>
+
+            <nav class="navbar navbar-expand-lg bg-body-tertiary" style="height: 5vh;">
+                <div class="container-fluid d-flex">
+                    <a class="navAncor navbar-brand" href="#">MENÚ</a>
+                    <button class="colorSanguche navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav">
+
+                            <li class="navLi">
+                                <a class="navAncor nav-link" aria-current="page" href="#">Inicio</a>
+                            </li>
+
+                            <li class="navLi">
+                                <a class="navAncor nav-link" href="./alumnos.html">ALUMNOS</a>
+                            </li>
+
+                            <li class="navLi">
+                                <a class="navAncor nav-link" href="./profesores.html">PROFESORES</a>
+                            </li>
+                            <li class="navLi">
+                                <a class="navAncor nav-link" href="./cursos.html">CURSOS</a>
+                            </li>
+                            <li class="navLi">
+                                <a class="navAncor nav-link" href="./contacto.html">CONTACTO</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <main>
+            <section class="s2Index">
+                <!-- Imagen de pintura para el header -->
+            </section>
+            <!-- Espacio para Carousel -->
+            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="./assets/carousel1.jpg" class="imgCarousel d-block w-100" alt="img carusel1">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./assets/carousel2.jpg" class="imgCarousel d-block w-100" alt="img carusel2">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./assets/carousel3.jpg" class="imgCarousel d-block w-100" alt="img carusel3">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+            <div class="subTitleIndex">
+                <h2 class="tituloCursos text-center">NUESTROS CURSOS</h2>
+            </div>
+            <div class="cardIndex row">
+                <div v-for="curso in cursos" class="card" style="width: 30%;">
+                    <img src="./assets/carousel3.jpg" class="imgIconoIndex card-img-top" alt="img carusel">
+                    <div class="card-body">
+                        <h6 class="card-title">{{curso.nombre}}</h6>
+                        <p class="card-text">{{curso.descripcion}}</p>
+                    </div>
+                    <div class="card-body">
+                        <a :href="'./alumnos.html?id='+curso.id" class="btn btn-secondary">INSCRIBIRME</a>
+                    </div>
+                </div>
+            </div>
+            <div class="subTitleIndex">
+                <h2 class="tituloCursos text-center">CONOCE A NUESTROS PROFESORES</h2>
+            </div>
+            <div class="m-5">
+                <div class="card mb-3 mt-3">
+                    <div class="row">
+                        <div class="col-md-5">
+                            <img src="./assets/profe1.jpg" class="img-fluid rounded-start" alt="Profe Pedro">
+                        </div>
+                        <div class="col-md-5">
+                            <div class="card-body">
+                                <h5 class="card-title">Pedro Guevara</h5>
+                                <p class="card-text" style="width: 400px;">Graduado de la carrera de Ingeniería en
+                                    Sistemas. Mentor de JAVA con mas de 10 años de experiencia con alumnos juniors.
+                                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Animi necessitatibus
+                                    adipisci aperiam natus, cupiditate nemo aspernatur id magnam. Repellendus eveniet
+                                    officia libero incidunt corporis nobis explicabo quam doloremque numquam et! </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card mb-3 mt-3">
+                    <div class="row ">
+                        <div class="col-md-5">
+                            <img src="./assets/profe2.jpg" class="img-fluid rounded-start"
+                                alt="Profe Juan Andrés Sotto">
+                        </div>
+                        <div class="col-md-5">
+                            <div class="card-body">
+                                <h5 class="card-title">Andrés Sotto</h5>
+                                <p class="card-text" style="width: 400px;">Licenciado en la carrera de
+                                    Telecomunicaciones. Desarrollador FullStack JAVA. Mentor de CSS con mas de 13 años
+                                    de experiencia. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    Perferendis, fuga inventore! Distinctio ipsa enim odio aliquam iusto veritatis
+                                    officia repellat vel tenetur, nulla itaque aspernatur, veniam nesciunt nemo,
+                                    inventore expedita!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card mb-3 mt-5">
+                    <div class="row ">
+                        <div class="col-md-5">
+                            <img src="./assets/profe3.jpg" class="img-fluid rounded-start" alt="Profe Ludmila Fontan">
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card-body">
+                                <h5 class="card-title">Ludmila Fontan</h5>
+                                <p class="card-text" style="width: 400px;">Graduada de la carrera de Ingeniería en
+                                    Informática. Desarrolladora FullStack. Mentora de HTMl con más de 5 años de
+                                    experiencia. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deserunt
+                                    provident consequatur saepe iure tempora aliquid error! Sapiente, harum officiis
+                                    sint tempore porro corrupti, facere magni maiores aspernatur repellendus sequi
+                                    voluptatum!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <div class="container" style="max-height: 700px;">
+                <div class="row">
+                    <div class="col order-5 m-3">
+                        <h5>Suscríbete a Nuestro Newsletter</h5>
+                        <hr>
+                        <ul>
+                            <li class="pb-3 m-4">
+                                <div class="input-group">
+                                    <input type="text" class="form-control" placeholder="Ingresa tu E-mail "
+                                        aria-label="Recipient's username with two button addons">
+                                    <button class="btn btn-outline-primary" type="button" style="border-left:none;"><img
+                                            src="./assets/img/email-logo-png-1125.png" alt="">Enviar</button>
+                                </div>
+                            </li>
+                            <li class="pb-2 pt-2 m-4">
+                                <p> Inscribete para recibir noticias!</p>
+                            </li>
+                        </ul>
+                        <div class="col m-5">
+                            <div>
+                                <button type="button" class="btn btn-outline-light m-3"><img src="./assets/logo-5to.png"
+                                        class="pay img-fluid" alt="ol"></button>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md order-1 d-flex flex-column align-content-between m-3">
+                        <h5>Nuestras Redes</h5>
+                        <hr>
+                        <div class="imagencita m-3">
+                            <a href="https://www.facebook.com/"><img src="./assets/face.png" alt="logofacebook"></a>
+                            <a href="https://www.instagram.com/"><img src="./assets/insta.png" alt="logoinstagram"></a>
+                            <a href="https://wa.link/d73goe"><img src="./assets/wsap.png" alt="logowsp"></a>
+                        </div>
+                        <div class="col-md m-1">
+                            <a href="#"><img src="./assets/logo-5to.png" class=" logo img-fluid w-65" alt="logo"></a>
+                        </div>
+                        <div class="col-md m-1">
+                            <ul>
+                                <li>&copy; 2023 Challengue 5to Impacto Belén Aguado.</li>
+                                <li>Todos los derechos reservados. <span><a href="#">INICIO.</a></span></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md order-1 m-3">
+                        <h5>Dirección</h5>
+                        <hr>
+                        <ul>
+                            <li>
+                                Aristobulo Del Valle 1352, Mendoza, Argentina.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+        </footer>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"
+        integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD"
+        crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
+
+    <script src="https://unpkg.com/vue@3"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+    <script src="./index.js"></script>
+
+</body>
+</html>
